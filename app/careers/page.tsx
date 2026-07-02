@@ -92,11 +92,13 @@ export default async function CareersPage() {
           </div>
         </div>
       </section>
+
       <section className="bg-ivory border-b border-line py-8">
         <div className="container-wide">
           <JobFilterControls scrollToId="positions" />
         </div>
       </section>
+
       {/* PILLARS */}
       <section className="section bg-bone">
         <div className="container-wide">
