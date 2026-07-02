@@ -69,7 +69,7 @@ export async function fetchRolesFromApi(): Promise<Role[]> {
   const baseUrl = process.env.NEXT_PUBLIC_PORTAL_BASE_URL || 'https://portal.revun.com'
   const url = `${baseUrl}/api/v1/job-postings?client_name=Rothenbury+Group`
   try {
-    const res = await fetch(url, { cache: 'no-store' })
+    const res = await fetch(url, { next: { revalidate: 60 } })
     if (!res.ok) {
       console.error('Failed to fetch roles', res.status)
       return []
