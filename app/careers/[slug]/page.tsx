@@ -128,7 +128,7 @@ export default async function CareerRolePage({ params }: RouteParams) {
                 <MetaRow label="Type">{role.type}</MetaRow>
                 <MetaRow label="Location(s)">{role.locationDisplay}</MetaRow>
                 {role.compensation && (
-                  <MetaRow label="Compensation">{role.compensation}</MetaRow>
+                  <MetaRow label="Compensation">{role.compensation} Annually</MetaRow>
                 )}
               </dl>
 
